@@ -5,7 +5,6 @@
 body {
 	margin: 0px;
 	padding-top: 40px;
-	padding-bottom: 120px;
 }
 
 .menu {
@@ -337,7 +336,15 @@ opacity: 1;
 	transform: translate3d(0, 0, 0);
 
 }
-
-
+.footer {
+	background-color: #56CC9D;
+margin: 0 auto;	
+height: 60px;
+}
+.footer p{
+	color: #fff;
+	text-align: center;
+padding-top: 20px;
+}
 
 
