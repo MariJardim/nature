@@ -17,8 +17,8 @@ debounce = function (func, wait, immediate) {
 
 //Mudar tab ao click
 $('[data-group]').each(function () {
-	var $allTarget = $(this).find('[data-target]'),
-		$allClick = $(this).find('[data-click]'),
+	var $allTarget = $(this).find('[data-target]'), //seleciona a div dos animais
+		$allClick = $(this).find('[data-click]'), // seleciona o btn
 		activeClass = 'active';
 
 	$allTarget.first().addClass(activeClass);
@@ -115,7 +115,7 @@ function slider(sliderName, velocidade) {
 
 
 }
-slider('introducao', 2000)
+slider('introducao', 2000);
 
 //Animação ao scroll
 //serve para colocar as variáveis dentro de um escopo que não seja global
@@ -139,6 +139,6 @@ animeScroll();
 
 $(document).scroll(debounce(function(){
 	animeScroll();
-}, 200));
+}, 100));
 })();
 
